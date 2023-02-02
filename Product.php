@@ -29,25 +29,19 @@
         }
 	
 	    function getName(){
-            echo '<ul>';
-                echo '<li><b>Name:</b> ' . $this->setName($this->name) . '</li>';
-            echo '</ul>';
+           return $this->$name;
 
         }
 	    function getDescription(){
-            echo '<ul>';
-                echo '<li><b>Description:</b> ' . $this->setDescription($this->description) . '</li>';
-            echo '</ul>';
+            return $this->$description;
 
         }
 	    function getPrice(){
-            echo '<ul>';
-                echo '<li><b>Price:</b> ' . $this->setPrice($this->price) . '</li>';
-            echo '</ul>'; 
+            return $this->$price;
         }
 	
 	    function computeSRP() {
-		    price * 1.5;
+            return $this->price * 1.5;
 
     }
 }
