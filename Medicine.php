@@ -27,7 +27,6 @@
             return $this->$expirationDate;
 
         }
-        
         function computeSRP() {
             return $this->price * 2;
         }

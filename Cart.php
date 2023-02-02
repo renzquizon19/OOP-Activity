@@ -1,12 +1,13 @@
 <?php 
 
 require_once "Product.php";
+require_once "Medicine.php";
 
 ?>
 
 <?php
     class Cart extends Medicine{
-        private $cartItems = array()
+        private $cartItems = array();
 
         function addToCart($item){
             $this->cartItems[] = $item;
@@ -26,7 +27,7 @@ require_once "Product.php";
                 </ul>
                 <hr>';
         }
-        function computeTota(){
+        function computeTotal(){
             $totalPrice = 0;
             foreach($this->cartItems as $key => $value){
                 $totalPrice += $value->computeSRP();
