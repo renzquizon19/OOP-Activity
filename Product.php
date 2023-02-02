@@ -8,13 +8,14 @@
 </head>
 <body>
     <?php
+    class Product {
+        
     private $name;
 	private $description;
 	private $price;
 	private $srp;
 
-    class Product {
-
+   
         function setName(){
             $this->name = $name;
         }
