@@ -7,28 +7,28 @@
         private $type;
         private $expirationDate;
         
-        function setDose(){
+        function setDose($dose){
             $this->dose = $dose;
         }
-        function setType(){
+        function setType($type){
             $this->type = $type;
         }
-        function setExpirationDate(){
+        function setExpirationDate($expirationDate){
             $this->expirationDate = $expirationDate;
         }
         
         function getDose(){
-            return $this->$dose;
+            return $this->dose;
         }
         function getType(){
-            return $this->$type;
+            return $this->type;
         }
         function getExpirationDate(){
-            return $this->$expirationDate;
+            return $this->expirationDate;
 
         }
         function computeSRP() {
-            return $this->price * 2;
+            return $this->getPrice() * 2;
         }
     }
 ?>
